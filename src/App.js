@@ -14,7 +14,13 @@ function App() {
         <h2>Unwind an exhausted mind</h2>
       </div>
       <VideoPlayer urls={urls} />
-      <footer> The Footer. </footer>
+      <footer> 
+        <p><b>about gibberish.tv:</b></p><br />
+        <p>there is a lot of mindfulness content out there - and no denying its helpfulness.</p>
+        <p>We found personally that best paired with mindfulness, is gibberish. content so random, 
+          so passionate, so interesting, so unuseful (yet surprisingly useful), that it can't help
+          but bring you back into reality.</p>
+      </footer>
     </div>
   );
 }

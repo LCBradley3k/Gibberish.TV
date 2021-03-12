@@ -10,12 +10,23 @@ body {
 
 h1 {
   color: #fff;
+  font-family: "Livvic", Arial, Helvetica, sans-serif;
+  padding: 20px 0 18px 0;
+  margin: 0;
+  font-size: 48px;
 }
 
 h2 {
   color: #52ffcf;
   font-size: 14px;
   font-weight: normal;
+  font-family: "Chilanka", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.6px;
+  background-color: rgba(0,0,0,0.45);
+  display: inline-block;
+  padding: 5px 10px 3px 10px;
+  margin: 0;
+  font-size: 18px;
 }
 
 .App {
@@ -32,7 +43,19 @@ h2 {
 }
 
 footer {
-  height: 1220px;
+  margin-top: 945px;
+  height: 300px;
+  background-color: rgba(0,0,0,0.85);
+  color: #fff;
+  padding-top: 42px;
+  text-align: center;
+}
+
+footer p {
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  color: rgb(184, 184, 189);
 }
 
 
