@@ -24,4 +24,16 @@
     overflow-y: hidden;
     overflow-x: hidden;
     margin: 0 auto;
-} 
+}
+
+.VideoPlayer button {
+    font-size: 24px;
+    margin-top: 40px;
+    padding: 7px 22px;
+    opacity: 0.8;
+}
+
+.VideoPlayer button:hover {
+    opacity: 1;
+    cursor: pointer;
+}

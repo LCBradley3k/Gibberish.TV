@@ -7,25 +7,36 @@ class VideoPlayer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            currentUrl: ""
+            currentIndex: 0
         }
         this.nextVideo = this.nextVideo.bind(this);
 
     }
 
-    nextVideo(currentVideo) {
-        this.setState({currentUrl: this.props.urls[0]});
+    nextVideo() {
+        return this.setState(st => {
+            let newIndex = st.currentIndex;
+            if(newIndex >= this.props.urls.length - 1){
+                newIndex = 0;
+            } else {
+                newIndex = newIndex + 1;
+            }
+            return {
+                currentIndex: newIndex
+            }
+        });
     }
 
     render() {
         const urls = this.props.urls;
         //const _currUrl = this.nextVideo(null) // no video played yet.
+        let index = this.state.currentIndex;
         
         return(
             <div className="VideoPlayer">
                 <ReactPlayer
                     className="react-player"
-                    url={urls}
+                    url={urls[index]}
                     controls={false}
                     playing={true}
                     config={{
@@ -35,7 +46,7 @@ class VideoPlayer extends Component {
                         }
                     }}
                 />
-                {/*<button>next (random) gibberish &#x2192;</button>*/}
+                <button onClick={this.nextVideo}>next (random) gibberish &#x2192;</button>
             </div>
         )
     }

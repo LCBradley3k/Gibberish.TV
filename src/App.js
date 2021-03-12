@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import VideoPlayer from './VideoPlayer'
+import shuffle from './Utils';
 
 function App() {
   const urls = [
-    "https://youtu.be/gNf8Bsu0UYc"
+    "https://youtu.be/gNf8Bsu0UYc",
+    "https://youtu.be/btMC9wE2AXg",
+    "https://youtu.be/wnHpqdiaKYs",
+    "https://youtu.be/ywSlCcEghMg"
   ];
+
+  shuffle(urls);
 
   return (
     <div className="App">
