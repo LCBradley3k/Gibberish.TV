@@ -37,3 +37,11 @@
     opacity: 1;
     cursor: pointer;
 }
+
+@media only screen 
+and (max-width : 800px) {
+    .VideoPlayer .react-player iframe {
+        height: 60vh;
+        width: 100vw;
+    }
+}

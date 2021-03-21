@@ -37,12 +37,14 @@ class VideoPlayer extends Component {
                 <ReactPlayer
                     className="react-player"
                     url={urls[index]}
-                    controls={false}
                     playing={true}
+                    controls={true}
                     config={{
                         youtube: {
-                            autoplay: 1,
-                            modestbranding: 1
+                            playerVars:{
+                                modestbranding: 1,
+                                controls: 1,
+                            }
                         }
                     }}
                 />

@@ -4,11 +4,15 @@ import VideoPlayer from './VideoPlayer'
 import shuffle from './Utils';
 
 function App() {
+
   const urls = [
-    "https://youtu.be/gNf8Bsu0UYc",
-    "https://youtu.be/btMC9wE2AXg",
-    "https://youtu.be/wnHpqdiaKYs",
-    "https://youtu.be/ywSlCcEghMg"
+    "https://youtu.be/gNf8Bsu0UYc", // 90 gallon aquarium
+    "https://youtu.be/IlFK2xhj4Mc", // the airport at 6:45am
+    "https://youtu.be/ywSlCcEghMg", // What do I know?
+    "https://youtu.be/kfKEB07LunA", // quarantine watch collection
+    "https://youtu.be/JrhQzuuuGHU", // airplanes landing at in-n-out
+    "https://youtu.be/zH25swZo9iA", // cat bed
+    "https://youtu.be/4RYnLl0IqMA"  // del taco late night drive
   ];
 
   shuffle(urls);
@@ -16,8 +20,9 @@ function App() {
   return (
     <div className="App">
       <div className="App__Header">
-        <h1>Gibberish.TV</h1>
-        <h2>Unwind an exhausted mind</h2>
+        <h1>gibberish.tv</h1>
+        <h2>unwind an exhausted mind</h2>
+        <span className="App__Header__tag2">a me &#38; my girlfriend production</span>
       </div>
       <VideoPlayer urls={urls} />
       <footer> 
